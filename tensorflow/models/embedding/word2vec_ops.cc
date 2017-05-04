@@ -19,7 +19,7 @@ namespace tensorflow {
 
 REGISTER_OP("Skipgram")
     .Output("vocab_word: string")
-    .Output("vocab_freq: int32")
+    .Output("vocab_freq: int64") // Ben A:
     .Output("words_per_epoch: int64")
     .Output("current_epoch: int32")
     .Output("total_words_processed: int64")
